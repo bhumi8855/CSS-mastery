@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position & Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="openBtn">Open Modal</button>
+    <div class="overlay">
+        <div class="modal">
+            <h2>Welcome!</h2>
+            <p>You have learned CSS Position!</p>
+            <button id="closeBtn">Close</button>
+        </div>
+    </div>
+    <script>
+        const openBtn=document.getElementById("openBtn");
+        const closeBtn=document.getElementById("closeBtn");
+        const overlay=document.querySelector(".overlay");
+
+        openBtn.onclick=()=>overlay.style.display="flex";
+        closeBtn.onclick=()=>overlay.style.display="none";
+    </script>
+</body>
+</html>
